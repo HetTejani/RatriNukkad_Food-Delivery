@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("images/img1 - fruits.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;     
+            color: rgba(0, 0, 0, 2);
+            color: rgba(0, 0, 0, 2);
+            height: 100vh;  /* Full viewport height */
+            width: 100vw;   /* Full viewport width */
+            overflow: hidden; /* Stops scrolling */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+        }
+        h2 {
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #f0c14b;
+            color: #111;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ddb347;
+        }
+        a {
+            text-decoration: none;
+            color: #0066c0;
+        }
+    </style>
+</head>
+<body>
+    <form action="customer.php" method="post">
+    <div class="container">
+        <h2>Create Account</h2>
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" name="fullname">
+        
+        <label>Mobile Number</label>
+        <select id="country-code">
+            <option value="+91">IN +91</option>
+        </select>
+        <input type="text" id="mobile" placeholder="Mobile number" name="mobile">
+        
+        <label>Email (optional)</label>
+        <input type="email" id="email" placeholder="Email" name="email">
+        
+        <label>Password</label>
+        <input type="password" id="password" placeholder="At least 6 characters" name="password">
+        
+        <button class="btn" 7><a href="login.html" style="color:black;">Continue</a></button>
+        
+        <p style="text-align: center;">Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+</form>
+</body>
+</html>

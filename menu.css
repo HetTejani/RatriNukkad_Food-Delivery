@@ -1,0 +1,394 @@
+/* General Styles */
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+body{
+    margin: 0px 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+
+}
+
+.div1{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(0, 0, 0);
+}
+.div2{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    gap:20px;
+    padding-right: 35px;
+    object-fit: contain;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    align-items: center;
+}
+.option{
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.but{
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+#btn1,#btn2{
+    padding: 10px 10px;
+    font-family: "Ubuntu", sans-serif;   
+    border-radius: 24px;
+    border: 1px solid black;
+    background-color: white; 
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+#btn3{   
+    border: 1px solid black;
+    padding: 11px 19px;
+    object-fit: cover;
+    width: 40px;  
+    height: 40px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease-in-out;
+}
+
+#login-icon{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.login-button{
+    display: flex;
+    align-items: center;
+}
+
+#btn3:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 8px rgba(0,0,0,0);
+    transition: transform 0.4s ease, box-shadow 0.7s ease;
+}
+
+#btn1:hover,#btn2:hover{
+    background-color: rgba(214, 120, 26, 0.399);
+    cursor: pointer;
+}
+li:hover{
+    background-color: rgba(128, 128, 128, 0.17);
+    
+}
+li{
+    border-radius: 10px;
+    padding: 2px 15px;
+    cursor: auto;
+}
+
+.nav-logo{
+    position: absolute;
+    left: 6%;
+    bottom:0px;
+    top: 0%;
+    background-image: none;
+    /* width: 120px;
+    height:53px ; */
+    mix-blend-mode: multiply;
+}
+
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.media{
+    background-color: rgb(255, 255, 255);
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    border-radius: 0px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    /* padding: 2px 2px; */
+}
+
+.media:hover{
+    transform: scale(1.2);
+    box-shadow: 0 8px 8px rgba(0,0,0,0);
+    transition: transform 0.4s ease, box-shadow 0.7s ease;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    padding-right: 130px;
+}
+
+.info{
+    display: flex;
+    gap: 20px;
+    padding-left: 50px;
+}
+
+span{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+.phone{
+    height:20px;
+}
+
+.mail{
+    height: 20px;
+    
+}
+header {
+    margin: 20px;
+}
+
+body {
+    background-image: url('images/bg-1-webpages.avif'); 
+    background-size:auto; 
+    background-position: center;
+    background-repeat:repeat;
+    position: relative;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.85); 
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.menu-filter button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.menu-filter button.active {
+    background-color: #c42b2b;
+    color: white;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.139);
+    text-align: center;
+    margin-bottom: 8.5px;
+    margin-left: 3.3px;
+    margin-right: 3.3px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item h2 {
+    color: #c42b2b;
+    margin: 10px 0;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.menu-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin: 0;
+    border-radius: 10px;
+    background: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.text-content {
+    max-width:100%;
+    padding-right: 10px;
+}
+
+.text-content h2 {
+    font-size: 54px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+.text-content #text{
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.menu-part .logo img {
+    max-width: 650px;
+    height: 180px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 65px;
+}
+
+
+/*FOOTER SECTION*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #444;
+    width: 97.65%;
+}
+
+.footer-logo {
+    flex: 1;
+    position: relative;
+}
+
+.footer .logo img {
+    max-width: 100px;
+}
+
+.pages, .instagram {
+    flex: 0.5;
+    ;
+}
+
+.footer h3 {
+    text-decoration: underline;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.footer ul li {
+    margin-bottom: 5px; 
+}
+
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0; 
+}
+
+.footer ul li {
+    margin: 0; 
+    padding: 5px 0; 
+    line-height: 1.5; 
+}
+
+
+.footer ul li a:hover {
+    color: #f39c12; 
+}
+
+.instagram-images {
+    display: flex;
+    gap: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    max-width: 2000px;
+}
+
+.instagram-images img {
+    width: 200px;
+    height: 120px;
+    width: 175px;
+    border-radius: 10px;
+}
+
+.footer-bottom {
+    background-color: #444;
+    width: 100%;
+    text-align: center; 
+    background-color: #444;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-logo #bottom {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.footer-bottom a:hover {
+    color: #f39c12;
+}
+
+.pages-ava{
+    padding: 0px;
+}
+.pages-ava li{
+    padding: 0px;
+    margin-bottom: 16px;
+}
