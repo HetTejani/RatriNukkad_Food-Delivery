@@ -1,7 +1,6 @@
 /* General Styles */
 *{
     font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
 }
 body{
     margin: 0px 0px;
@@ -20,6 +19,7 @@ nav{
     height: 35px;
     background-color: rgb(0, 0, 0);
 }
+
 .div2{
     position: relative;
     display: flex;
@@ -35,7 +35,7 @@ nav{
     display: flex;
     gap: 30px;
     padding-right: 20px;
-
+    font-size: 18px;
 }
 
 li{
@@ -47,6 +47,7 @@ li{
     display: flex;
     align-items: center;
     gap: 20px;  
+    font-size: 18px;
 }
 
 #btn1,#btn2{
@@ -109,9 +110,11 @@ li{
     bottom:0px;
     top: 0%;
     background-image: none;
-    /* width: 120px;
-    height:53px ; */
+    width: 190px;
+    height:80px ;
     mix-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .div1{
@@ -541,10 +544,15 @@ footer {
 .footer-logo {
     flex: 1;
     position: relative;
+    padding-left: 20px;
+    padding: 10px;
 }
 
+.footer-logo img,
 .footer .logo img {
-    max-width: 100px;
+    max-width: 300px;
+    height: auto;
+    display: block;
 }
 
 .pages, .instagram {
