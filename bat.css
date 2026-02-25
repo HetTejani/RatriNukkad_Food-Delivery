@@ -83,6 +83,10 @@ nav {
     top: 0;
     bottom: 0;
     mix-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 80px;
 }
 
 .option {
@@ -108,10 +112,11 @@ nav {
     color: black;
 }
 
-.but {
+.but{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 20px;  
+    font-size: 18px;
 }
 
 #btn1,
@@ -245,9 +250,18 @@ footer {
     font-size:medium;
 }
 
+.footer-logo {
+    flex: 1;
+    position: relative;
+    padding-left: 20px;
+    padding: 10px;
+}
+
+.footer-logo img,
 .footer .logo img {
-    max-width: 100px;
-    margin-bottom: 50px;
+    max-width: 300px;
+    height: auto;
+    display: block;
 }
 
 .pages, .instagram {

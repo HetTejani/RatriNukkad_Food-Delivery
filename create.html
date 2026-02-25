@@ -15,7 +15,6 @@
             background-size: cover;
             background-attachment: fixed;     
             color: rgba(0, 0, 0, 2);
-            color: rgba(0, 0, 0, 2);
             height: 100vh;  /* Full viewport height */
             width: 100vw;   /* Full viewport width */
             overflow: hidden; /* Stops scrolling */
@@ -50,6 +49,10 @@
             width: 100%;
             border-radius: 4px;
             cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            box-sizing: border-box;
         }
         .btn:hover {
             background-color: #ddb347;
@@ -59,6 +62,7 @@
             color: #0066c0;
         }
     </style>
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
     <form action="customer.php" method="post">
@@ -79,7 +83,7 @@
         <label>Password</label>
         <input type="password" id="password" placeholder="At least 6 characters" name="password">
         
-        <button class="btn" 7><a href="login.html" style="color:black;">Continue</a></button>
+        <a href="login.html" class="btn">Continue</a>
         
         <p style="text-align: center;">Already have an account? <a href="login.html">Sign in</a></p>
     </div>
