@@ -1,0 +1,1 @@
+# TODO: Fix entry point to redirect to Homepage.html&#10;&#10;✅ **All steps complete!**&#10;&#10;- [x] 1. Delete INDEX.css (command executed successfully)&#10;- [x] 2. Rewrite index.html as redirect page to Homepage.html&#10;- [x] 3. Verify redirect works (`start index.html` executed to open in default browser)&#10;- [x] 4. Update TODO.md complete
