@@ -228,8 +228,16 @@ img { display: block; max-width: 100%; }
 .footer__list { display:flex; flex-direction:column; gap:12px; }
 .footer__list li a { font-size:14px; color:rgba(255,255,255,.55); transition:var(--transition); }
 .footer__list li a:hover { color:var(--gold); padding-left:4px; }
-.footer__insta-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
-.footer__insta-grid img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:8px; filter:brightness(.85) saturate(.9); transition:var(--transition); }
+.footer__insta-grid { width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(2, 0.25fr); 
+    gap: 10px; }
+.footer__insta-grid img {max-width: 150px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(.85) saturate(.9);
+    transition: var(--transition); }
 .footer__insta-grid img:hover { filter:brightness(1) saturate(1); transform:scale(1.03); }
 .footer__bottom { background:var(--dark-mid); padding:16px 48px; text-align:center; }
 .footer__bottom p { font-size:13px; color:rgba(255,255,255,.35); }
