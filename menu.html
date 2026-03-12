@@ -3,408 +3,863 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu — Ratri Nukkad</title>
     <link rel="stylesheet" href="menu.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="div1">
-            <div class="info">
-                <span><img class="phone" src="images/phone.jpg"> +91 9023611966</span>
-                <span><img class="mail" src="images/mail.png"> supprort.ratrinukkad@gmail.com</span>
-            </div>
-            <div class="social">
-                <img class="media" src="images/facebook.jpeg">
-                <img class="media" src="images/instagram.jpeg">
-                <img class="media" src="images/twitter.jpg">
-                <img class="media" src="images/whatsapp.png">
-            </div>
+
+    <!-- ══ TOP BAR ══ -->
+    <div class="topbar">
+        <div class="topbar__info">
+            <span class="topbar__item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17z"/></svg>
+                +91 9023611966
+            </span>
+            <span class="topbar__divider">·</span>
+            <span class="topbar__item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5a292f2a2a35282e74283b2e2833342f31313b3e1a3d373b333674393537">[email&#160;protected]</a>
+            </span>
         </div>
-    
-        <div class="div2">
-            <div>
-                <img class="nav-logo" src="images/LOGO.png" alt="logo">
-            </div>
-            <ul class="option">
-                <li><a href="Homepage.html" style="color: black; text-decoration: none;">Home</a></li>
-                <li><a href="about us.html" style="color: black; text-decoration: none;">About us</a></li>
-                <li><a href="menu.html" style="color: black; text-decoration: none;">Menu</a></li>
-                <li><a href="contact.html" style="color: black; text-decoration: none;">Contact Us</a></li>
-            </ul>
-            <button id="btn1">
-                <a href="bat.html" style="color: black; text-decoration: none;">Book Table</a>
-            </button>
-            <button id="btn2">
-                <a href="menu.html" style="color: black; text-decoration: none;">Order Here</a>
-            </button>
-                <button id="btn3">
-                    <a href="login.html" class="login-button">
-                        <img id="login-icon" src="images/login icon.png" alt="user" height="40" width="42">
-                    </a>
-                </button>
-            </div>
+        <div class="topbar__social">
+            <a href="#" class="topbar__social-link" aria-label="Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="topbar__social-link" aria-label="Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="topbar__social-link" aria-label="Twitter">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="topbar__social-link" aria-label="WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.856L.057 23.25a.75.75 0 0 0 .916.99l5.56-1.453A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.9 0-3.686-.51-5.22-1.398l-.374-.22-3.882 1.016 1.037-3.788-.24-.388A9.713 9.713 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- ══ NAVBAR ══ -->
+    <nav class="navbar">
+        <a href="Homepage.html" class="navbar__logo">
+            <img src="images/LOGO.png" alt="Ratri Nukkad">
+        </a>
+        <ul class="navbar__links">
+            <li><a href="Homepage.html" class="navbar__link">Home</a></li>
+            <li><a href="about us.html" class="navbar__link">About Us</a></li>
+            <li><a href="menu.html" class="navbar__link navbar__link--active">Menu</a></li>
+            <li><a href="contact.html" class="navbar__link">Contact</a></li>
+        </ul>
+        <div class="navbar__actions">
+            <a href="bat.html" class="navbar__btn navbar__btn--outline">Book Table</a>
+            <a href="menu.html" class="navbar__btn navbar__btn--filled">Order Here</a>
+            <a href="login.html" class="navbar__avatar" aria-label="Login">
+                <img src="images/login icon.png" alt="Login">
+            </a>
         </div>
     </nav>
-    
-  
-    <div class="background"></div>
-    <header>
-        <h1>Our Menu</h1>
-        <p>We consider all the drivers of change to give you the components you need to create a truly happening menu for you.</p>
-        <div class="menu-filter">
-            <button class="active">All</button>
-            <button>Breakfast</button>
-            <button>Main Dishes</button>
-            <button>Snacks</button>
-            <button>Drinks</button>
-            <button>Desserts</button>
+
+    <!-- ══ PAGE HERO ══ -->
+    <section class="menu-hero">
+        <div class="menu-hero__overlay"></div>
+        <img class="menu-hero__bg" src="images/bg-1-webpages.avif" alt="Menu background">
+        <div class="menu-hero__content">
+            <nav class="menu-hero__breadcrumb" aria-label="Breadcrumb">
+                <a href="Homepage.html">Home</a>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                <span>Menu</span>
+            </nav>
+            <span class="hero-tag">What We Serve</span>
+            <h1 class="menu-hero__title">Our <em>Menu</em></h1>
+            <p class="menu-hero__sub">Every dish crafted with care — from morning breakfasts to late-night cravings.</p>
         </div>
-    </header>
-    <section class="menu-grid">
-        
-        <!-- Breakfast -->
-        <div class="menu-item">
-            <img src="images/menu-thepla.jpeg" alt="Thepla">
-            <h2>₹50</h2>
-            <h3>Thepla(4 pcs)</h3>
-            <p>Made with wheat flour, termeric, salt, oil , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+        <!-- floating category pills on hero -->
+        <div class="menu-hero__pills">
+            <span class="hero-pill">🥞 Breakfast</span>
+            <span class="hero-pill hero-pill--gold">🍛 Main Dishes</span>
+            <span class="hero-pill">🥙 Snacks</span>
+            <span class="hero-pill hero-pill--gold">🥤 Drinks</span>
+            <span class="hero-pill">🍨 Desserts</span>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-poha.jpeg" alt="poha">
-            <h2>₹25</h2>
-            <h3>Poha</h3>
-            <p>Made with rice, termeric, salt, oil , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+    </section>
+
+    <!-- ══ FILTER BAR ══ -->
+    <div class="filter-bar">
+        <div class="filter-bar__inner">
+            <button class="filter-btn filter-btn--active" data-filter="all">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                All Items
+            </button>
+            <button class="filter-btn" data-filter="breakfast">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Breakfast
+            </button>
+            <button class="filter-btn" data-filter="main">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                Main Dishes
+            </button>
+            <button class="filter-btn" data-filter="snacks">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                Snacks
+            </button>
+            <button class="filter-btn" data-filter="drinks">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/></svg>
+                Drinks
+            </button>
+            <button class="filter-btn" data-filter="desserts">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 8v4l3 3"/></svg>
+                Desserts
+            </button>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-kachori.jpeg" alt="kachori">
-            <h2>₹25</h2>
-            <h3>Kota Special kachori(1 pcs)</h3>
-            <p>Made with wheat flour, termeric, salt, oil , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+    </div>
+
+    <!-- ══ MENU GRID ══ -->
+    <main class="menu-main">
+
+        <!-- ── BREAKFAST ── -->
+        <div class="menu-section-label" id="section-breakfast" data-category="breakfast">
+            <span class="section-tag">Morning Favourites</span>
+            <h2 class="menu-cat-title">Breakfast</h2>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-khamaan.jpeg" alt="Khamaan">
-            <h2>₹40</h2>
-            <h3>Khamaan(100g)</h3>
-            <p>Made with gram flour(besan), rava, lemon juice, curd, baking soda, , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+        <div class="menu-grid" id="grid-breakfast">
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-thepla.jpeg" alt="Thepla">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Thepla <span class="mcard__qty">(4 pcs)</span></h3>
+                        <span class="mcard__price">₹50</span>
+                    </div>
+                    <p class="mcard__desc">Made with wheat flour, turmeric, salt, oil and fresh spices.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-poha.jpeg" alt="Poha">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Poha</h3>
+                        <span class="mcard__price">₹25</span>
+                    </div>
+                    <p class="mcard__desc">Made with flattened rice, turmeric, salt, oil and fresh herbs.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-kachori.jpeg" alt="Kachori">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Kota Special Kachori <span class="mcard__qty">(1 pc)</span></h3>
+                        <span class="mcard__price">₹25</span>
+                    </div>
+                    <p class="mcard__desc">Made with wheat flour, turmeric, salt, oil and spices.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-khamaan.jpeg" alt="Khamaan">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Khamaan <span class="mcard__qty">(100g)</span></h3>
+                        <span class="mcard__price">₹40</span>
+                    </div>
+                    <p class="mcard__desc">Made with gram flour, rava, lemon juice, curd and baking soda.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-upma.jpeg" alt="Upma">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Upma</h3>
+                        <span class="mcard__price">₹35</span>
+                    </div>
+                    <p class="mcard__desc">Made with rava, chana dal, urad dal, green chilies and vegetables.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-idli sambhar.jpeg" alt="Idli Sambhar">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Idli Sambhar</h3>
+                        <span class="mcard__price">₹80</span>
+                    </div>
+                    <p class="mcard__desc">Made with fermented rice, vegetables, spices and tamarind pulp.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-paratha.jpg" alt="Paratha">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Paratha <span class="mcard__qty">(4 pcs)</span></h3>
+                        <span class="mcard__price">₹60</span>
+                    </div>
+                    <p class="mcard__desc">Whole wheat flour, salt, water, and oil or ghee — classic comfort.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-dosa.avif" alt="Masala Dosa">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Masala Dosa</h3>
+                        <span class="mcard__price">₹75</span>
+                    </div>
+                    <p class="mcard__desc">Made with parboiled rice, urad dal, and served with chutney.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-Fafda.jpg" alt="Fafda">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Fafda <span class="mcard__qty">(100g)</span></h3>
+                        <span class="mcard__price">₹65</span>
+                    </div>
+                    <p class="mcard__desc">Thick besan flour, hing, black pepper — a Gujarati classic.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-oats.avif" alt="Oats">
+                    <span class="mcard__badge mcard__badge--healthy">Healthy</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Oats</h3>
+                        <span class="mcard__price">₹99</span>
+                    </div>
+                    <p class="mcard__desc">Wholesome oat grain, prepared fresh — a light and nutritious start.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-Vadapav.jpg" alt="Vadapav">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Vadapav</h3>
+                        <span class="mcard__price">₹35</span>
+                    </div>
+                    <p class="mcard__desc">Potato or banana filling with chutneys — Mumbai's beloved street snack.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="breakfast">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-samosa.webp" alt="Samosa">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Samosa <span class="mcard__qty">(2 pcs)</span></h3>
+                        <span class="mcard__price">₹35</span>
+                    </div>
+                    <p class="mcard__desc">All-purpose flour pastry with potato/banana filling and garam masala.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-upma.jpeg" alt="Upma">
-            <h2>₹35</h2>
-            <h3>Upma</h3>
-            <p>Made with rava, chana dal, urad dal, green chilies, vegetables , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+        <!-- ── MAIN DISHES ── -->
+        <div class="menu-section-label" id="section-main" data-category="main">
+            <span class="section-tag">Hearty &amp; Flavourful</span>
+            <h2 class="menu-cat-title">Main Dishes</h2>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-idli sambhar.jpeg" alt="Idli Sambhar">
-            <h2>₹80</h2>
-            <h3>Idli Sambhar</h3>
-            <p>Made with fermented rice , vegetables, spices, and tamarind pulp , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+        <div class="menu-grid" id="grid-main">
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-paneerbutter.jpeg" alt="Paneer Butter Masala">
+                    <span class="mcard__badge mcard__badge--popular">Popular</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Paneer Butter Masala <span class="mcard__qty">(250g)</span></h3>
+                        <span class="mcard__price">₹170</span>
+                    </div>
+                    <p class="mcard__desc">Paneer cubes in a rich, creamy tomato gravy with aromatic spices.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-palakpaneer.jpg" alt="Palak Paneer">
+                    <span class="mcard__badge mcard__badge--healthy">Healthy</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Palak Paneer <span class="mcard__qty">(250g)</span></h3>
+                        <span class="mcard__price">₹180</span>
+                    </div>
+                    <p class="mcard__desc">Fresh spinach and soft cottage cheese in a delectable Indian-style preparation.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-malaikofta.webp" alt="Malai Kofta">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Malai Kofta <span class="mcard__qty">(250g)</span></h3>
+                        <span class="mcard__price">₹180</span>
+                    </div>
+                    <p class="mcard__desc">Vegetable koftas fried and cooked in a rich, sweet golden gravy.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-veghandi.jpg" alt="Veg Handi">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Veg. Handi Brown <span class="mcard__qty">(250g)</span></h3>
+                        <span class="mcard__price">₹165</span>
+                    </div>
+                    <p class="mcard__desc">Mixed vegetables, cashew paste, fresh cream, chilies and butter.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-dalfry.jpeg" alt="Dal Fry">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Dal Fry <span class="mcard__qty">(250g)</span></h3>
+                        <span class="mcard__price">₹120</span>
+                    </div>
+                    <p class="mcard__desc">Toor dal with vegetables, spices and fresh kasuri methi.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-daltadka.jpeg" alt="Dal Tadka">
+                    <span class="mcard__badge mcard__badge--popular">Popular</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Dal Tadka <span class="mcard__qty">(250g)</span></h3>
+                        <span class="mcard__price">₹150</span>
+                    </div>
+                    <p class="mcard__desc">Moong or toor dal with a fragrant tadka of spices in ghee.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-jeerarice.webp" alt="Jeera Rice">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Jeera Rice</h3>
+                        <span class="mcard__price">₹95</span>
+                    </div>
+                    <p class="mcard__desc">Fragrant basmati rice cooked with cumin seeds, ghee and spices.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-cheesebiryani.jpeg" alt="Cheese Biryani">
+                    <span class="mcard__badge mcard__badge--popular">Popular</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Cheese Biryani</h3>
+                        <span class="mcard__price">₹185</span>
+                    </div>
+                    <p class="mcard__desc">Basmati rice with cheese, spices, paneer and vegetables in gravy.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-roti.jpeg" alt="Butter Fulka Roti">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Butter Fulka Roti</h3>
+                        <span class="mcard__price">₹17</span>
+                    </div>
+                    <p class="mcard__desc">Soft whole wheat flatbread — the perfect partner for any curry.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-rotlo.webp" alt="Rotlo">
+                    <span class="mcard__badge mcard__badge--healthy">Healthy</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Bajra ka Rotlo</h3>
+                        <span class="mcard__price">₹69</span>
+                    </div>
+                    <p class="mcard__desc">Gluten-free flatbread made with bajra flour, salt and water.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-naan.jpg" alt="Butter Naan">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Butter Naan</h3>
+                        <span class="mcard__price">₹65</span>
+                    </div>
+                    <p class="mcard__desc">Fluffy leavened bread — buttery, soft, and oven-fresh.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="main">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-lachhaparatha.jpeg" alt="Tawa Paratha">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Butter Tawa Paratha</h3>
+                        <span class="mcard__price">₹45</span>
+                    </div>
+                    <p class="mcard__desc">Wheat flour, water, ghee — layered and griddle-cooked to perfection.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-paratha.jpg" alt="Paratha">
-            <h2>₹60</h2>
-            <h3>Paratha(4 pcs)</h3>
-            <p>whole wheat flour (atta), salt, water, and oil or ghee , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+        <!-- ── SNACKS ── -->
+        <div class="menu-section-label" id="section-snacks" data-category="snacks">
+            <span class="section-tag">Street-Style Bites</span>
+            <h2 class="menu-cat-title">Snacks</h2>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-dosa.avif" alt="Masala Dosa">
-            <h2>₹75</h2>
-            <h3>Masala Dosa</h3>
-            <p>Made with rice(parboiled rice), urad dal,salt , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+        <div class="menu-grid" id="grid-snacks">
+            <div class="mcard" data-category="snacks">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-cholebhatore.jpeg" alt="Chole Bhature">
+                    <span class="mcard__badge mcard__badge--popular">Popular</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Chole Bhature <span class="mcard__qty">(2 pcs)</span></h3>
+                        <span class="mcard__price">₹180</span>
+                    </div>
+                    <p class="mcard__desc">Chickpeas, veggies, spices and chana masala with fluffy maida bhature.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="snacks">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-pavbhaji.jpeg" alt="Pav Bhaji">
+                    <span class="mcard__badge mcard__badge--popular">Popular</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Pav Bhaji <span class="mcard__qty">(3 pcs)</span></h3>
+                        <span class="mcard__price">₹170</span>
+                    </div>
+                    <p class="mcard__desc">Veggies, spices, butter and lemon juice served with toasted buttery buns.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="snacks">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-bhel.jpeg" alt="Bhel">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Bhel</h3>
+                        <span class="mcard__price">₹45</span>
+                    </div>
+                    <p class="mcard__desc">Puffed rice, gram flour, rice and corn flakes with salts and spices.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="snacks">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-katchiddabeli.jpeg" alt="Katchi Dabeli">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Katchi Dabeli</h3>
+                        <span class="mcard__price">₹30</span>
+                    </div>
+                    <p class="mcard__desc">Mashed potatoes with Dabeli Masala in a bun with chutneys and peanuts.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="snacks">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-paneerchilly.jpeg" alt="Paneer Chilli">
+                    <span class="mcard__badge mcard__badge--spicy">Spicy</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Paneer Chilli</h3>
+                        <span class="mcard__price">₹180</span>
+                    </div>
+                    <p class="mcard__desc">Paneer cubes stir-fried with peppers and veggies in a spicy-tangy sauce.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="snacks">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-momos.jpg" alt="Momos">
+                    <span class="mcard__badge mcard__badge--popular">Popular</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Veg. Steamed Momos <span class="mcard__qty">(5 pcs)</span></h3>
+                        <span class="mcard__price">₹150</span>
+                    </div>
+                    <p class="mcard__desc">Maida dough filled with seasoned veggies and cheese, steamed to perfection.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="snacks">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-dal pakwan.jpeg" alt="Dal Pakwan">
+                    <span class="mcard__badge">Veg</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Dal Pakwan</h3>
+                        <span class="mcard__price">₹75</span>
+                    </div>
+                    <p class="mcard__desc">Chana dal curry served with crispy fried maida pakwan bread.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+            <div class="mcard" data-category="snacks">
+                <div class="mcard__img-wrap">
+                    <img src="images/menu-manchurian.jpeg" alt="Manchurian">
+                    <span class="mcard__badge mcard__badge--spicy">Spicy</span>
+                </div>
+                <div class="mcard__body">
+                    <div class="mcard__top">
+                        <h3 class="mcard__name">Veg. Dry Manchurian</h3>
+                        <span class="mcard__price">₹185</span>
+                    </div>
+                    <p class="mcard__desc">Crispy veg balls tossed in a bold, Indo-Chinese manchurian sauce.</p>
+                    <a href="#" class="mcard__btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-Fafda.jpg" alt="Gathiya">
-            <h2>₹65</h2>
-            <h3>Fafda(100g)</h3>
-            <p>Made with Thick besan flour, spices like hing,and black pepper, , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+    </main>
+
+    <!-- ══ ORDER CTA ══ -->
+    <section class="order-cta">
+
+        <!-- background texture ring -->
+        <div class="order-cta__ring order-cta__ring--1"></div>
+        <div class="order-cta__ring order-cta__ring--2"></div>
+
+        <!-- top label -->
+        <div class="order-cta__eyebrow">
+            <span class="order-cta__line"></span>
+            <span class="order-cta__label">Order Online</span>
+            <span class="order-cta__line"></span>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-oats.avif" alt="Oats">
-            <h2>₹99</h2>
-            <h3>Oats</h3>
-            <p>Made with oat grain , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+        <!-- big centred headline -->
+        <h2 class="order-cta__title">
+            Why order elsewhere<br>when <em>we deliver</em> direct?
+        </h2>
+        <p class="order-cta__sub">Fresh, fast, and straight from our kitchen to your door. No middlemen, no markups — just great food the way it was meant to arrive.</p>
+
+        <!-- three feature cards -->
+        <div class="order-cta__cards">
+            <div class="order-cta__card">
+                <div class="order-cta__card-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <h3>100% Fresh</h3>
+                <p>Every order made from scratch — no pre-packaged shortcuts, ever.</p>
+            </div>
+            <div class="order-cta__card order-cta__card--accent">
+                <div class="order-cta__card-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Direct from our kitchen — faster than any third-party app can promise.</p>
+            </div>
+            <div class="order-cta__card">
+                <div class="order-cta__card-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3>Best Prices</h3>
+                <p>No platform fees — what you see on the menu is exactly what you pay.</p>
+            </div>
         </div>
-        <div class="menu-item">
-            <img src="images/menu-Vadapav.jpg" alt="Vadapav">
-            <h2>₹35</h2>
-            <h3>Vadapav</h3>
-            <p>Made with potato/Banana filling, the vada batter, chutneys , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-samosa.webp" alt="Samosa" >
-            <h2>₹35</h2>
-            <h3>Samosa(2 pcs)</h3>
-            <p>Made with all-purpose flour,the filling includes potatoes/Banana, garam masala , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>  
-        
-        <!-- Main Dishes -->
-        <div class="menu-item">
-            <img src="images/menu-paneerbutter.jpeg" alt="Paneer Butter Masala">
-            <h2>₹170</h2>
-            <h3>Paneer Butter Masala(250g)</h3>
-            <p>Made with Paneer cubes cooked in a rich, creamy, and buttery tomato gravy with spices, etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-             <img src="images/menu-palakpaneer.jpg" alt="Palak Paneer">
-            <h2>₹180</h2>
-            <h3>Palak Paneer(250g)</h3>
-            <p>Made with combination of fresh spinach and soft cottage cheese in a delectable Indian-style preparation.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-malaikofta.webp" alt="Malai Kofta">
-            <h2>₹180</h2>
-            <h3>Malai Kofta(250g)</h3>
-            <p>Made with Vegetable koftas, coated in corn flour, fried, and cooked in a rich sweet brown/yellow gravy, etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-veghandi.jpg" alt="Veg. Handi (Brown)">
-            <h2>₹165</h2>
-            <h3>Veg. Handi (Brown)(250g)</h3>
-            <p>Made with Mixed vegetables,  cashew paste, fresh cream, green chilies, spices, butter/ghee, etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-dalfry.jpeg" alt="Dal Fry">
-            <h2>₹120</h2>
-            <h3>Dal Fry(250g)</h3>
-            <p>Made with  toor dal, vegitables, spices, herbs (coriander, kasuri methi), etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-daltadka.jpeg" alt="Dal Tadka">
-            <h2>₹150</h2>
-            <h3>Dal Tadka(250g)</h3>
-            <p>Made with moong dal or toor dal), spices, a tadka of spices in hot oil or ghee, etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-jeerarice.webp" alt="Jeera Rice">
-            <h2>₹95</h2>
-            <h3>Jeera Rice</h3>
-            <p>Made with Fragrant basmati rice cooked with cumin(jeera) seeds, ghee, and spices.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-cheesebiryani.jpeg" alt="Cheese Biryani">
-            <h2>₹185</h2>
-            <h3>Cheese Biryani</h3>
-            <p>Made with Basmati rice with cheese, spices, paneer and vegetables with gravy, etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-roti.jpeg" alt="Fulka Roti">
-            <h2>₹17</h2>
-            <h3>Butter Fulka Roti</h3>
-            <p>Made with a combination of plain whole wheat flour (atta) and water.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-rotlo.webp" alt="Rotlo">
-            <h2>₹69</h2>
-            <h3>Bajra ka Rotlo</h3>
-            <p>Made with a gluten-free flatbread with bajra flour, salt and water's combination.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-naan.jpg" alt="Butter Naan">
-            <h2>₹65</h2>
-            <h3>Butter Naan</h3>
-            <p>Made with a bowl mixed with flour, baking powder, baking soda/yeast, , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-lachhaparatha.jpeg" alt="Tawa Paratha" >
-            <h2>₹45</h2>
-            <h3>Butter Tawa Paratha</h3>
-            <p>Made with Wheat flour, water, ghee , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>        
-        
-        <!-- SNACKS -->
-        <div class="menu-item">
-            <img src="images/menu-cholebhatore.jpeg" alt="Chole Bhature">
-            <h2>₹180</h2>
-            <h3>Chole Bhature(2 pcs)</h3>
-            <p>Made with chickpeas, veggies, spices, chana masala, maida flour, oil, and baking ingredients.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-             <img src="images/menu-pavbhaji.jpeg" alt="Pav Bhaji">
-            <h2>₹170</h2>
-            <h3>Pav Bhaji(3 pcs)</h3>
-            <p>Made with veggies, spices, butter, and lemon juice, served with buttery toasted buns.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-bhel.jpeg" alt="Bhel">
-            <h2>₹45</h2>
-            <h3>Bhel</h3>
-            <p>Made with puffed rice, gram flour, rice & corn flakes, salts, spices, etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-katchiddabeli.jpeg" alt="Katchi Dabeli">
-            <h2>₹30</h2>
-            <h3>Katchi Dabeli</h3>
-            <p>Made with boiled-mashed potatoes, Dabeli Masala, and served in a bun with chutneys and roasted peanuts.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-paneerchilly.jpeg" alt="Paneer Chilli">
-            <h2>₹180</h2>
-            <h3>Paneer Chilli</h3>
-            <p>Made with cubes of paneer stir-fried with peppers, veggies, coated in a spicy-tangy sauce, etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-momos.jpg" alt="Momos">
-            <h2>₹150</h2>
-            <h3>Veg. Steamed Momos(5 pcs)</h3>
-            <p>Made with A maida dough filled with seasoned meat, veggies, cheese and then steamed to perfection.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-dal pakwan.jpeg" alt="Dal Pakwan">
-            <h2>₹75</h2>
-            <h3>Dal Pakwan</h3>
-            <p>Made with Chana dal curry and served with crispy fried maida bread(pakwan).</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-manchurian.jpeg" alt="Manchurian">
-            <h2>₹185</h2>
-            <h3>Veg. Dry Manchurian</h3>
-            <p>Made with Basmati rice with cheese, spices, paneer and vegetables with gravy, etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-roti.jpeg" alt="Fulka Roti">
-            <h2>₹17</h2>
-            <h3>Butter Fulka Roti</h3>
-            <p>Made with a combination of plain whole wheat flour (atta) and water.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-rotlo.webp" alt="Rotlo">
-            <h2>₹69</h2>
-            <h3>Bajra ka Rotlo</h3>
-            <p>Made with a gluten-free flatbread with bajra flour, salt and water's combination.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-naan.jpg" alt="Butter Naan">
-            <h2>₹65</h2>
-            <h3>Butter Naan</h3>
-            <p>Made with a bowl mixed with flour, baking powder, baking soda/yeast, , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
-        </div>
-        <div class="menu-item">
-            <img src="images/menu-lachhaparatha.jpeg" alt="Tawa Paratha" >
-            <h2>₹45</h2>
-            <h3>Butter Tawa Paratha</h3>
-            <p>Made with Wheat flour, water, ghee , etc.</p>
-            <button style="padding: 10px 20px; border: none; cursor: pointer; background-color: #ddd; border-radius: 20px; 
-            font-size: 16px; "><a href="#" style="color: black; text-decoration: none;">ADD TO CART</a></button>
+
+        <!-- CTA buttons -->
+        <div class="order-cta__actions">
+            <a href="#" class="order-cta__btn order-cta__btn--primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Order Now
+            </a>
+            <a href="bat.html" class="order-cta__btn order-cta__btn--outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Book a Table
+            </a>
         </div>
 
     </section>
-    
-    <div class="menu-part">
-        <div class="text-content">
-            <h2>You can order through our own website</h2>
-            <p id="text">Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
-        </div>
-        <div class="logo">
-            <img src="images/LOGO.png" alt="Ratri Nukkad Logo">
-        </div>
+
+    <!-- ══ SEPARATOR WAVE ══ -->
+    <div class="section-wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#1a1714"/>
+        </svg>
     </div>
 
-    <footer>
-        <div class="footer-logo">
-            <img src="images/LOGO.png" alt="Nukkad Logo">
-            <p id="bottom" style="color: beige;">In the new era of technology we look at the future with certainty and <br>pride for our company.</p>
-            <div class="social">
-                
-                <img class="media" src="images/facebook.jpeg">
-                <img class="media" src="images/instagram.jpeg">
-                <img class="media" src="images/twitter.jpg">
-                <img class="media" src="images/whatsapp.png">
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="images/LOGO.png" alt="Ratri Nukkad Logo" class="footer__logo">
+            <p class="footer__tagline">In the new era of technology we look at the future with certainty and pride for our company.</p>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Twitter">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.856L.057 23.25a.75.75 0 0 0 .916.99l5.56-1.453A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.9 0-3.686-.51-5.22-1.398l-.374-.22-3.882 1.016 1.037-3.788-.24-.388A9.713 9.713 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                </a>
+            </div>
         </div>
-        </div>
-
-        <div class="pages">
-            <h3 style="color: beige; text-decoration: none;">Pages</h3>
-            <ul class="pages-ava">
-                <li><a href="Homepage.html" style="color: beige; text-decoration: none;">Home</a></li>
-                <li><a href="about us.html" style="color: beige; text-decoration: none;">About Us</a></li>
-                <li><a href="menu.html" style="color: beige; text-decoration: none;">Menu</a></li>
-                <li><a href="contact.html" style="color: beige; text-decoration: none;">Contact Us</a></li>
-                <li><a href="bat.html" style="color: beige; text-decoration: none;">Book A Table</a></li>
+        <div class="footer__pages">
+            <h4 class="footer__heading">Pages</h4>
+            <ul class="footer__list">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="bat.html">Book A Table</a></li>
             </ul>
         </div>
-
-        <div class="instagram">
-            <h3 style="color: beige; text-decoration: none;">Follow Us On Instagram</h3>
-            <div class="instagram-images">
+        <div class="footer__instagram">
+            <h4 class="footer__heading">Follow on Instagram</h4>
+            <div class="footer__insta-grid">
                 <img src="images/punjabi-image1.avif" alt="Punjabi dish">
                 <img src="images/snack-image2.jpg" alt="Fast Food">
-                <img src="images/breakfast-image3.jpg" alt="gujarati breakfast">
-                <img src="images/drinks-image4.jpg" alt="drinks">
+                <img src="images/breakfast-image3.jpg" alt="Gujarati Breakfast">
+                <img src="images/drinks-image4.jpg" alt="Drinks">
             </div>
         </div>
     </footer>
-    <div class="footer-bottom">
-        <p style="color: beige; text-decoration: none;">Copyright &copy; 2025<a href="ratri-nukkad.vercel.app/Homepage.html" style="text-decoration: none; color: #ffffff;"> HT Developer.</a> All Rights Reserved</p>
+    <div class="footer__bottom">
+        <p>Copyright &copy; 2025 <a href="https://het-tejani-portfolio.vercel.app/">HT Developer</a>. All Rights Reserved.</p>
     </div>
+
+    <script>
+        (function () {
+            function getScrollOffset() {
+                var navbar = document.querySelector('.navbar');
+                var filterBar = document.querySelector('.filter-bar');
+                return (navbar ? navbar.offsetHeight : 74) +
+                       (filterBar ? filterBar.offsetHeight : 52) + 16;
+            }
+
+            var buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var filter = btn.getAttribute('data-filter');
+
+                    // update active state
+                    buttons.forEach(function (b) { b.classList.remove('filter-btn--active'); });
+                    btn.classList.add('filter-btn--active');
+
+                    // "All" scrolls to top of menu-main
+                    if (filter === 'all') {
+                        var menuMain = document.querySelector('.menu-main');
+                        if (menuMain) {
+                            var top = menuMain.getBoundingClientRect().top + window.pageYOffset - getScrollOffset();
+                            window.scrollTo({ top: top, behavior: 'smooth' });
+                        }
+                        return;
+                    }
+
+                    // scroll to matching section
+                    var target = document.getElementById('section-' + filter);
+                    if (target) {
+                        var top = target.getBoundingClientRect().top + window.pageYOffset - getScrollOffset();
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // auto-highlight active button on scroll
+            var sections = document.querySelectorAll('.menu-section-label[id]');
+            window.addEventListener('scroll', function () {
+                var offset = getScrollOffset() + 40;
+                var current = '';
+                sections.forEach(function (sec) {
+                    if (sec.getBoundingClientRect().top <= offset) {
+                        current = sec.getAttribute('data-category');
+                    }
+                });
+                buttons.forEach(function (btn) {
+                    var filter = btn.getAttribute('data-filter');
+                    btn.classList.remove('filter-btn--active');
+                    if (filter === current || (current === '' && filter === 'all')) {
+                        btn.classList.add('filter-btn--active');
+                    }
+                });
+            });
+        })();
+    </script>
+
 </body>
 </html>

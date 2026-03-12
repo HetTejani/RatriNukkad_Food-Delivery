@@ -1,0 +1,263 @@
+/* ═══════════════════════════════════════════════
+   RATRI NUKKAD — Login Page Stylesheet
+   Site-wide theme tokens
+═══════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Design Tokens ───────────────────────────── */
+:root {
+    --crimson:    #ad343e;
+    --crimson-dk: #8a2831;
+    --ink:        #1e1e1e;
+    --ink-soft:   #3a3a3a;
+    --cream:      #fdfaf5;
+    --sand:       #f5f0e8;
+    --warm-gray:  #a09080;
+    --gold:       #c9a84c;
+    --border:     #e2dbd0;
+    --dark-bg:    #1a1714;
+    --ff-display: 'Cormorant Garamond', Georgia, serif;
+    --ff-body:    'Jost', sans-serif;
+    --shadow-md:  0 8px 40px rgba(0, 0, 0, 0.22);
+    --radius:     16px;
+    --transition: 0.32s cubic-bezier(.25,.46,.45,.94);
+}
+
+/* ── Base ────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--ff-body);
+    background-image: url("images/img1 - fruits.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: var(--ink);
+}
+
+/* dark overlay so card pops on any background image */
+body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background: rgba(20, 12, 8, 0.52);
+    z-index: 0;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ═══════════════════════════
+   LOGIN CARD
+═══════════════════════════ */
+.container {
+    position: relative; z-index: 1;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: 400px;
+    padding: 44px 40px 36px;
+    text-align: center;
+    animation: cardIn .5s cubic-bezier(.22,1,.36,1) both;
+}
+
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Logo / Title ───────────────────────────── */
+.logo {
+    font-family: var(--ff-display);
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: .04em;
+    margin-bottom: 6px;
+}
+
+.logo em {
+    font-style: italic;
+    color: var(--crimson);
+}
+
+.logo-sub {
+    font-size: 13px;
+    color: var(--warm-gray);
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+/* divider under heading */
+.card-divider {
+    height: 2px;
+    background: linear-gradient(90deg, var(--crimson) 0%, transparent 70%);
+    border-radius: 2px;
+    margin: 0 auto 28px;
+    width: 60px;
+}
+
+/* ── Form ───────────────────────────────────── */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.form-group input {
+    font-family: var(--ff-body);
+    font-size: 14.5px;
+    color: var(--ink);
+    background: var(--sand);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    outline: none;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.form-group input::placeholder { color: #c0b8b0; }
+
+.form-group input:hover { border-color: #c8bfb4; }
+
+.form-group input:focus {
+    border-color: var(--crimson);
+    box-shadow: 0 0 0 3px rgba(173,52,62,.09);
+    background: white;
+}
+
+/* forgot password */
+.forgot-link {
+    text-align: right;
+    font-size: 12.5px;
+    color: var(--warm-gray);
+    margin-top: -6px;
+    transition: color var(--transition);
+    display: block;
+}
+
+.forgot-link:hover { color: var(--crimson); }
+
+/* ── Submit Button ──────────────────────────── */
+.btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 13px;
+    background: var(--crimson);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--ff-body);
+    font-size: 14.5px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 6px 20px rgba(173,52,62,.28);
+    margin-top: 4px;
+}
+
+.btn-submit:hover {
+    background: var(--crimson-dk);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(173,52,62,.38);
+}
+
+.btn-submit:active { transform: translateY(0); }
+
+/* ── Divider ────────────────────────────────── */
+.divider-or {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: var(--warm-gray);
+    font-weight: 400;
+    margin: 20px 0 16px;
+}
+
+.divider-or::before,
+.divider-or::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+/* ── Social Login ───────────────────────────── */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.social-btn {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    background: white;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+.social-btn:hover {
+    border-color: var(--crimson);
+    box-shadow: 0 4px 16px rgba(173,52,62,.15);
+    transform: translateY(-2px);
+}
+
+.social-btn svg { display: block; flex-shrink: 0; }
+
+/* ── Footer Text ────────────────────────────── */
+.card-footer {
+    font-size: 13px;
+    color: var(--warm-gray);
+    font-weight: 400;
+}
+
+.card-footer a {
+    color: var(--crimson);
+    font-weight: 600;
+    transition: color var(--transition);
+}
+
+.card-footer a:hover { color: var(--crimson-dk); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ═══════════════════════════
+   RESPONSIVE
+═══════════════════════════ */
+@media (max-width: 480px) {
+    .container { padding: 36px 24px 28px; margin: 0 16px; }
+    .logo { font-size: 2rem; }
+}

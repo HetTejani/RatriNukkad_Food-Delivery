@@ -3,115 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book A Table</title>
+    <title>Book A Table — Ratri Nukkad</title>
     <link rel="stylesheet" href="bat.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="div1">
-            <div class="info">
-                <span><img class="phone" src="images/phone.jpg"> +91 9023611966</span>
-                <span><img class="mail" src="images/mail.png">supprort.ratrinukkad@gmail.com</span>
-            </div>
-            <div class="social">
-                
-                    <img class="media" src="images/facebook.jpeg">
-                    <img class="media" src="images/instagram.jpeg">
-                    <img class="media" src="images/twitter.jpg">
-                    <img class="media" src="images/whatsapp.png">
-            </div>
-        </div>
 
-        <div class="div2">
-            <div>
-                <img class="nav-logo" src="images/LOGO.png" alt="logo" style="width: auto; height: 80px; mix-blend-mode: multiply; background-size: contain; background-repeat: no-repeat; background-image: url('images/LOGO.png');">
-            </div>
-            <ul class="option">
-                <li><a href="Homepage.html" style="color: black; text-decoration: none;">Home</a></li>
-                <li><a href="about us.html" style="color: black; text-decoration: none;">About us</a></li>
-                <li><a href="menu.html" style="color: black; text-decoration: none;">Menu</a></li>
-                <li><a href="contact.html" style="color: black; text-decoration: none;">Contact Us</a></li>
-            </ul>
-                <div class="but">
-                    <button id="btn1">
-                        <a href="bat.html" style="color: black; text-decoration: none;">Book Table</a>
-                    </button>
-                    <button id="btn2">
-                        <a href="menu.html" style="color: black; text-decoration: none;">Order Here</a>
-                    </button>
-                    <button id="btn3">
-                        <a href="login.html" class="login-button">
-                            <img id="login-icon" src="images/login icon.png" alt="user" height="40 " width="42">
-                        </a>
-                    </button>
+    <!-- ══ TOP BAR ══ -->
+    <div class="topbar">
+        <div class="topbar__info">
+            <span class="topbar__item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17z"/></svg>
+                +91 9023611966
+            </span>
+            <span class="topbar__divider">·</span>
+            <span class="topbar__item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+                support.ratrinukkad@gmail.com
+            </span>
+        </div>
+        <div class="topbar__social">
+            <a href="#" class="topbar__social-link" aria-label="Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="topbar__social-link" aria-label="Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="topbar__social-link" aria-label="Twitter">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="topbar__social-link" aria-label="WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.856L.057 23.25a.75.75 0 0 0 .916.99l5.56-1.453A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.9 0-3.686-.51-5.22-1.398l-.374-.22-3.882 1.016 1.037-3.788-.24-.388A9.713 9.713 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- ══ NAVBAR ══ -->
+    <nav class="navbar">
+        <a href="Homepage.html" class="navbar__logo">
+            <img src="images/LOGO.png" alt="Ratri Nukkad">
+        </a>
+        <ul class="navbar__links">
+            <li><a href="Homepage.html" class="navbar__link">Home</a></li>
+            <li><a href="about us.html" class="navbar__link">About Us</a></li>
+            <li><a href="menu.html" class="navbar__link">Menu</a></li>
+            <li><a href="contact.html" class="navbar__link">Contact</a></li>
+        </ul>
+        <div class="navbar__actions">
+            <a href="bat.html" class="navbar__btn navbar__btn--filled">Book Table</a>
+            <a href="menu.html" class="navbar__btn navbar__btn--outline">Order Here</a>
+            <a href="login.html" class="navbar__avatar" aria-label="Login">
+                <img src="images/login icon.png" alt="Login">
+            </a>
+        </div>
+    </nav>
+
+    <!-- ══ BOOKING HERO BANNER ══ -->
+    <div class="booking-hero">
+        <div class="booking-hero__content">
+            <span class="booking-hero__tag">Reserve Your Spot</span>
+            <h1 class="booking-hero__title">Book A Table at <em>Ratri Nukkad</em></h1>
+            <p class="booking-hero__sub">Secure your seat for an unforgettable dining experience.<br>We'll confirm your reservation within minutes.</p>
+        </div>
+        <div class="booking-hero__badges">
+            <div class="hero-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                    <span>Open Daily</span>
+                    <small>9am – 10pm weekends</small>
                 </div>
+            </div>
+            <div class="hero-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <div>
+                    <span>Up to 6+ Guests</span>
+                    <small>Group bookings welcome</small>
+                </div>
+            </div>
+            <div class="hero-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg>
+                <div>
+                    <span>Instant Confirmation</span>
+                    <small>We'll reach out shortly</small>
+                </div>
+            </div>
         </div>
-  </nav>
+    </div>
 
-        <section class="booking">
-            <h2>Book A Table</h2>
-            <form>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" required>
+    <!-- ══ BOOKING FORM SECTION ══ -->
+    <main class="booking-wrapper">
+        <div class="booking-card">
 
-                <label for="time">Time</label>
-                <input type="time" id="time" name="time" required>
+            <div class="booking-card__header">
+                <h2 class="booking-card__title">Reservation Details</h2>
+                <p class="booking-card__sub">Fill in the details below and we'll get back to you shortly.</p>
+                <div class="booking-card__divider"></div>
+            </div>
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <form class="booking-form" id="bookingForm" novalidate>
 
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="X-XXX-XXX-XXXX" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
 
-                <label for="persons">Total Person</label>
-                <select id="persons" name="persons" required>
-                    <option value="1">1 Person</option>
-                    <option value="2">2 Persons</option>
-                    <option value="3">3 Persons</option>
-                    <option value="4">4 Persons</option>
-                    <option value="5">5+ Persons</option>
-                </select>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Raj Patel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                </div>
 
-                <button type="submit">Book A Table</button>
+                <div class="form-group">
+                    <label for="persons">Number of Guests</label>
+                    <select id="persons" name="persons" required>
+                        <option value="" disabled selected>Select number of guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Persons</option>
+                        <option value="3">3 Persons</option>
+                        <option value="4">4 Persons</option>
+                        <option value="5">5 Persons</option>
+                        <option value="6+">6+ Persons (large group)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Special Requests <span class="form-optional">(optional)</span></label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Dietary preferences, occasion, seating preference…"></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Confirm Reservation
+                </button>
+
+                <p class="form-note">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Your information is kept private and never shared.
+                </p>
             </form>
-        </section>
-
-        <footer>
-            <div class="footer-logo">
-                <img src="images/LOGO.png" alt="Nukkad Logo">
-                <p id="bottom" style="color: beige;">In the new era of technology we look at the future with certainty and <br>pride for our company.</p>
-                <div class="social">
-                    <img class="media" src="images/facebook.jpeg">
-                    <img class="media" src="images/instagram.jpeg">
-                    <img class="media" src="images/twitter.jpg">
-                    <img class="media" src="images/whatsapp.png">
-                </div>
-            </div>
-    
-            <div class="pages">
-                <h3 style="color: beige; text-decoration: none;">Pages</h3>
-                <ul class="pages-ava">
-                    <li><a href="Homepage.html" style="color: beige; text-decoration: none;">Home</a></li>
-                    <li><a href="about us.html" style="color: beige; text-decoration: none;">About Us</a></li>
-                    <li><a href="menu.html" style="color: beige; text-decoration: none;">Menu</a></li>
-                    <li><a href="contact.html" style="color: beige; text-decoration: none;">Contact Us</a></li>
-                    <li><a href="bat.html" style="color: beige; text-decoration: none;">Book A Table</a></li>
-                </ul>
-            </div>
-    
-            <div class="instagram">
-                <h3 style="color: beige; text-decoration: none;">Follow Us On Instagram</h3>
-                <div class="instagram-images">
-                    <img src="images/punjabi-image1.avif" alt="Punjabi dish">
-                    <img src="images/snack-image2.jpg" alt="Fast Food">
-                    <img src="images/breakfast-image3.jpg" alt="gujarati breakfast">
-                    <img src="images/drinks-image4.jpg" alt="drinks">
-                </div>
-            </div>
-        </footer>
-        <div class="footer-bottom">
-            <p style="color: beige; text-decoration: none;">Copyright &copy; 2025<a href="ratri-nukkad.vercel.app/Homepage.html" style="text-decoration: none; color: #ffffff;"> HT Developer.</a> All Rights Reserved</p>
         </div>
+    </main>
+
+    <!-- ══ TOAST ══ -->
+    <div class="toast" id="toast">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        Booking confirmed! We'll reach out soon.
+    </div>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="images/LOGO.png" alt="Ratri Nukkad Logo" class="footer__logo">
+            <p class="footer__tagline">In the new era of technology we look at the future with certainty and pride for our company.</p>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" class="footer__social-link" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                <a href="#" class="footer__social-link" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                <a href="#" class="footer__social-link" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.856L.057 23.25a.75.75 0 0 0 .916.99l5.56-1.453A11.93 11.93 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.9 0-3.686-.51-5.22-1.398l-.374-.22-3.882 1.016 1.037-3.788-.24-.388A9.713 9.713 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg></a>
+            </div>
+        </div>
+        <div class="footer__pages">
+            <h4 class="footer__heading">Pages</h4>
+            <ul class="footer__list">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="bat.html">Book A Table</a></li>
+            </ul>
+        </div>
+        <div class="footer__instagram">
+            <h4 class="footer__heading">Follow on Instagram</h4>
+            <div class="footer__insta-grid">
+                <img src="images/punjabi-image1.avif" alt="Punjabi dish">
+                <img src="images/snack-image2.jpg" alt="Fast Food">
+                <img src="images/breakfast-image3.jpg" alt="Gujarati Breakfast">
+                <img src="images/drinks-image4.jpg" alt="Drinks">
+            </div>
+        </div>
+    </footer>
+    <div class="footer__bottom">
+        <p>Copyright &copy; 2025 <a href="https://het-tejani-portfolio.vercel.app/">HT Developer</a>. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const toast = document.getElementById('toast');
+            toast.classList.add('toast--show');
+            setTimeout(() => toast.classList.remove('toast--show'), 4000);
+            this.reset();
+        });
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+    </script>
+
 </body>
 </html>
